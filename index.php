@@ -7,7 +7,7 @@ $action = isset($_GET['action']) ? $_GET['action'] : 'index';
         echo "<div><a href='index.php?page=customers&action=index'>Khách hàng</a></div>";
         echo "<div><a href='index.php?page=productlines&action=index'>Danh mục sản phẩm</a></div>"; 
     }
-    switch ($page)
+    switch ( $page )
     {
         case 'login':
             require_once "Controllers/LoginController.php";      
